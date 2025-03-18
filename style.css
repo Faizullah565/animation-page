@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    background-image: linear-gradient(aqua, grey);
+    height: 90vh;
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+
+    animation: faizu infinite 3s;
+    position: absolute;
+}
+
+@keyframes faizu {
+
+    0%{
+    background-color: yellow;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        left: 40%;
+        top:0px;
+        border-radius: 50%;
+    background-color: green;
+
+    }
+    50%{
+        left: 40%;
+        top:40%;
+        border-radius: 0%;
+    background-color: red;
+
+    }
+    75%{
+        left: 0px;
+        top: 40%;
+        border-radius: 50%;
+    background-color: blue;
+        
+    }
+    100%{
+        top: 0px;
+    }
+    
+}
+
+.box2{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+
+    animation: balghari infinite 3s;
+    position: absolute;
+}
+
+@keyframes balghari {
+
+    0%{
+    background-color: yellow;
+        right: 0px;
+        top: 0px;
+    }
+    25%{
+        right: 40%;
+        top:0px;
+        border-radius: 50%;
+    background-color: green;
+
+    }
+    50%{
+        right: 40%;
+        top:40%;
+        border-radius: 0%;
+    background-color: red;
+
+    }
+    75%{
+        right: 0px;
+        top: 40%;
+        border-radius: 50%;
+    background-color: blue;
+        
+    }
+    100%{
+        background-color: yellow;
+        top: 0px;
+        right: 0px;
+
+    }
+    
+}
+
+
+.main1{
+    background-image: linear-gradient(aqua, yellow, rgb(73, 221, 73));
+    /* height: 140vh; */
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    padding: 20px;
+
+}
+
+.grid1,.grid2,.grid3{
+    background-color: white;
+    height: 300px;
+    width: auto;
+    padding: 5px;
+}
+
+/* Grid1 */
+.grid1{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+}
+.grid11,.grid12,.grid13{
+    width: auto;
+    border: 10px solid gray;
+}
+/* Grid2 */
+.grid2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+.grid21,.grid22,.grid23{
+    width: auto;
+    border: 10px solid gray;
+
+}
+.grid21{
+    grid-row: 1/3;
+}
+
+/* Grid3 */
+.grid3{
+    display: grid;
+    grid-template-columns: auto  auto auto;
+    grid-gap: 10px;
+}
+.grid31,.grid32,.grid33,.grid34,.grid35,.grid36{
+    width: auto;
+    border: 10px solid gray;
+
+}
+
+
+
+
+/* Transform */
+.main2{
+    height: 100vh;
+    /* position: relative; */
+}
+
+.main2 img{
+    margin: 200px 0 0 560px;
+    /* background-color: green; */
+    /* height: 150px;
+    grid-column: 1/5;
+    width: auto; */
+    /* transition: 10s; */
+    transition: 10s;
+    position: absolute;
+    /* z-index: 1; */
+    
+}
+.main2 img:hover{
+    /* transform: rotate(90deg); */
+    /* transform: rotateX(90deg); */
+    /* transform: rotateY(90deg); */
+    /* transform: scale(1.5); */
+    /* transform: skew(180deg); */
+    /* transform: skewX(20deg); */
+    /* transform: skewY(20deg); */
+    /* transform: translate(-300px); */
+    /* transform: rotate(360deg) skew(180deg) scale(2) translate(100px, 200px); */
+
+    transform: rotate(10000deg) scaleY(-1) scaleX(-1);
+
+}
+
+
+
+.keyframe{
+    position: relative;
+    height: 100vh;
+
+}
+
+.boxs1{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+
+    animation: faiz infinite 3s;
+    position: absolute;
+}
+
+@keyframes faiz {
+
+    0%{
+    background-color: yellow;
+        left: 0%;
+        top: 0%;
+    }
+    20%{
+        left: 10%;
+        top:0px;
+    background-color: green;
+
+    }
+    30%{
+        left: 10%;
+        top:10%;
+    background-color: red;
+
+    }
+    40%{
+        left: 20%;
+        top: 10%;
+    background-color: blue;
+        
+    }
+    50%{
+    background-color: purple;
+
+        left: 20%;
+        top: 20%;
+    }
+
+    60%{
+    background-color: pink;
+
+        left: 30%;
+        top: 20%;
+        
+    }
+    70%{
+        background-color: orange;
+        left: 30%;
+        top: 30%;
+    }
+
+    80%{
+        left: 40%;
+        top: 30%;
+    background-color: brown;
+        
+    }
+    90%{
+        left: 40%;
+        top: 40%;
+    background-color: gray;
+
+    }
+
+    100%{
+        left: 50%;
+        top: 40%;
+    background-color: violet;
+
+    }
+    
+}
